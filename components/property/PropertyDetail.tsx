@@ -1,68 +1,73 @@
-import { PropertyProps } from "@/interfaces/index";
+import { PropertyProps } from "@/interfaces";
 import BookingSection from "./BookingSection";
 import ReviewSection from "./ReviewSection";
-import { useState } from "react";
-
-const tabs = ["What we offer", "Reviews", "About host"];
+import { Button } from "@/components/ui/button";
+import { Share2, Heart } from "lucide-react";
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => {
-  const [selectedTab, setSelectedTab] = useState("What we offer");
-
   return (
-    <div className="container mx-auto px-4 py-6">
-      <h1 className="text-4xl font-bold">{property.name}</h1>
-      <div className="text-gray-600 mt-2">
-        ⭐ {property.rating} · {property.address.city}, {property.address.country}
+    <div className="max-w-7xl mx-auto px-4 py-8">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
+        <div>
+          <h1 className="text-3xl font-bold">{property.name}</h1>
+          <p className="text-gray-600">
+            ⭐ {property.rating} · {property.address.city}, {property.address.country}
+          </p>
+        </div>
+        <div className="flex gap-2">
+          <Button variant="outline" className="flex items-center gap-1 text-sm">
+            <Share2 size={16} /> Share
+          </Button>
+          <Button variant="outline" className="flex items-center gap-1 text-sm">
+            <Heart size={16} /> Save
+          </Button>
+        </div>
       </div>
 
       {/* Image Grid */}
-      <div className="grid grid-cols-2 gap-4 mt-6">
-        <img src={property.image} alt="Main" className="col-span-2 h-96 w-full object-cover rounded-lg" />
-        {property.images?.slice(0, 3).map((img, i) => (
-          <img key={i} src={img} className="h-48 w-full object-cover rounded-lg" />
+      <div className="grid grid-cols-4 grid-rows-2 gap-2 rounded-lg overflow-hidden mb-6">
+        <img
+          src={property.image}
+          alt="Main"
+          className="col-span-2 row-span-2 w-full h-full object-cover rounded-l-xl"
+        />
+        {property.images.slice(0, 4).map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Property ${index}`}
+            className="w-full h-full object-cover"
+          />
         ))}
       </div>
 
-      {/* Layout Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
-        {/* Left: Tabs + Amenities + Reviews */}
-        <div className="lg:col-span-2">
-          {/* Tabs */}
-          <div className="flex space-x-4 mb-4 border-b pb-2">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                className={`text-lg ${selectedTab === tab ? "font-bold border-b-2 border-black" : "text-gray-500"}`}
-                onClick={() => setSelectedTab(tab)}
-              >
-                {tab}
-              </button>
-            ))}
+      {/* Main content with Booking sidebar */}
+      <div className="grid lg:grid-cols-3 gap-10">
+        <div className="col-span-2 space-y-8">
+          {/* Description */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-2">Overview</h2>
+            <p className="text-gray-700 leading-relaxed">{property.description}</p>
           </div>
 
-          {/* Tab Content */}
-          {selectedTab === "What we offer" && (
-            <div>
-              <h2 className="text-2xl font-semibold mt-4">Amenities</h2>
-              <ul className="grid grid-cols-2 gap-2 mt-2">
-                {property.category.map((amenity, i) => (
-                  <li key={i} className="bg-gray-100 p-2 rounded">{amenity}</li>
-                ))}
-              </ul>
+          {/* What this place offers */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-4">What this place offers</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {property.category.map((item, index) => (
+                <span key={index} className="text-gray-700 flex items-center">
+                  • {item}
+                </span>
+              ))}
             </div>
-          )}
+          </div>
 
-          {selectedTab === "Reviews" && <ReviewSection reviews={property.reviews} />}
-
-          {selectedTab === "About host" && (
-            <div className="mt-4">
-              <h3 className="text-xl font-semibold">Host Info</h3>
-              <p>{property.host?.bio || "No information available."}</p>
-            </div>
-          )}
+          {/* Reviews */}
+          <ReviewSection reviews={property.reviews} />
         </div>
 
-        {/* Right: Booking */}
+        {/* Booking card */}
         <div className="sticky top-24 h-fit">
           <BookingSection price={property.price} />
         </div>

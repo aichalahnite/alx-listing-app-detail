@@ -1,16 +1,29 @@
 import { useRouter } from "next/router";
-import { PROPERTYLISTINGSAMPLE } from "@/constants/index";
+import { useEffect, useState } from "react";
+import { PROPERTYLISTINGSAMPLE } from "@/constants";
 import PropertyDetail from "@/components/property/PropertyDetail";
+import { PropertyProps } from "@/interfaces";
 
 export default function PropertyPage() {
   const router = useRouter();
   const { id } = router.query;
 
-  const property = PROPERTYLISTINGSAMPLE.find(
-    (item) => item.id.toString() === id
-  );
+  const [property, setProperty] = useState<PropertyProps | null>(null);
 
-  if (!property) return <p>Property not found</p>;
+  useEffect(() => {
+    if (id && typeof id === "string") {
+      const found = PROPERTYLISTINGSAMPLE.find((item) => item.id === id);
+      setProperty(found ?? null);
+    }
+  }, [id]);
+
+  if (!router.isReady) {
+    return <p className="text-center mt-10">Loading...</p>;
+  }
+
+  if (!property) {
+    return <p className="text-center text-red-500 mt-10">Property not found</p>;
+  }
 
   return (
     <div className="p-4">

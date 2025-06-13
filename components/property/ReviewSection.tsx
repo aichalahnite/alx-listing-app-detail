@@ -1,17 +1,17 @@
-const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
+import { Review } from "@/interfaces";
+
+const ReviewSection: React.FC<{ reviews: Review[] }> = ({ reviews }) => {
   return (
-    <div className="mt-6">
+    <div className="mt-10">
       <h3 className="text-2xl font-semibold mb-4">Reviews</h3>
-      {reviews.map((review, index) => (
-        <div key={index} className="border-b pb-4 mb-4">
-          <div className="flex items-center mb-2">
-            <img src={review.avatar} alt="User" className="w-10 h-10 rounded-full mr-3" />
-            <div>
-              <p className="font-bold">{review.name}</p>
-              <p className="text-yellow-500 text-sm">{review.rating} stars</p>
-            </div>
+      {reviews.map((r, i) => (
+        <div key={i} className="border-b pb-4 mb-4 flex items-start space-x-4">
+          <img src={r.avatar} className="w-12 h-12 rounded-full" alt={r.name} />
+          <div>
+            <p className="font-bold">{r.name}</p>
+            <p className="text-yellow-500">{r.rating} ★</p>
+            <p>{r.comment}</p>
           </div>
-          <p>{review.comment}</p>
         </div>
       ))}
     </div>

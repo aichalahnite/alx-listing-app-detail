@@ -7,6 +7,7 @@ export const APP_NAME = 'ALX Listing App';
 //milstone 1
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
   {
+    id: "villa-ocean-breeze",
     name: "Villa Ocean Breeze",
     address: {
       state: "Seminyak",
@@ -22,9 +23,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "4-6"
     },
     image: "/assets/houses/villa-ocean-breeze.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "mountain-escape-chalet",
     name: "Mountain Escape Chalet",
     address: {
       state: "Aspen",
@@ -40,9 +62,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "5-7"
     },
     image: "/assets/houses/mountain-escape-chalet.jpg",
-    discount: "30"
+    discount: "30",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "cozy-desert-retreat",
     name: "Cozy Desert Retreat",
     address: {
       state: "Palm Springs",
@@ -58,9 +101,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "2-3"
     },
     image: "/assets/houses/cozy-desert-retreat.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "city-lights-penthouse",
     name: "City Lights Penthouse",
     address: {
       state: "New York",
@@ -76,9 +140,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "2-4"
     },
     image: "/assets/houses/city-lights-penthouse.jpg",
-    discount: "15"
+    discount: "15",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "riverside-cabin",
     name: "Riverside Cabin",
     address: {
       state: "Queenstown",
@@ -94,9 +179,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "4-6"
     },
     image: "/assets/houses/riverside-cabin.jpg",
-    discount: "20"
+    discount: "20",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "modern-beachfront-villa",
     name: "Modern Beachfront Villa",
     address: {
       state: "Sidemen",
@@ -112,9 +218,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "8-10"
     },
     image: "/assets/houses/modern-beachfront-villa.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "lakeside-chalet",
     name: "Lakeside Chalet",
     address: {
       state: "Banff",
@@ -130,9 +257,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "4-5"
     },
     image: "/assets/houses/lakeside-chalet.jpg",
-    discount: "10"
+    discount: "10",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "tropical-garden-villa",
     name: "Tropical Garden Villa",
     address: {
       state: "Koh Samui",
@@ -148,9 +296,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "5-6"
     },
     image: "/assets/houses/tropical-garden-villa.jpg",
-    discount: "25"
+    discount: "25",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "urban-loft",
     name: "Urban Loft",
     address: {
       state: "Berlin",
@@ -166,9 +335,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "2-3"
     },
     image: "/assets/houses/urban-loft.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "secluded-forest-cabin",
     name: "Secluded Forest Cabin",
     address: {
       state: "Whistler",
@@ -184,9 +374,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "5-7"
     },
     image: "https://example.com/image10.jpg",
-    discount: "40"
+    discount: "40",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "cliffside-villa",
     name: "Cliffside Villa",
     address: {
       state: "Amalfi",
@@ -202,9 +413,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "6-8"
     },
     image: "https://example.com/image11.jpg",
-    discount: "50"
+    discount: "50",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg",
+      "/assets/not-found.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "coastal-escape-villa",
     name: "Coastal Escape Villa",
     address: {
       state: "Noosa",
@@ -220,9 +452,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "4-6"
     },
     image: "https://example.com/image12.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "historical-villa",
     name: "Historical Villa",
     address: {
       state: "Florence",
@@ -238,9 +491,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "2-4"
     },
     image: "https://example.com/image13.jpg",
-    discount: "35"
+    discount: "35",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "downtown-apartment",
     name: "Downtown Apartment",
     address: {
       state: "Tokyo",
@@ -256,9 +530,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "2"
     },
     image: "https://example.com/image14.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "luxury-safari-lodge",
     name: "Luxury Safari Lodge",
     address: {
       state: "Serengeti",
@@ -274,9 +569,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "6-8"
     },
     image: "https://example.com/image15.jpg",
-    discount: "20"
+    discount: "20",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "countryside-cottage",
     name: "Countryside Cottage",
     address: {
       state: "Cotswolds",
@@ -292,9 +608,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "2-4"
     },
     image: "https://example.com/image16.jpg",
-    discount: "25"
+    discount: "25",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "riverfront-mansion",
     name: "Riverfront Mansion",
     address: {
       state: "Paris",
@@ -310,9 +647,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "6-8"
     },
     image: "https://example.com/image17.jpg",
-    discount: "30"
+    discount: "30",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "ski-chalet",
     name: "Ski Chalet",
     address: {
       state: "Zermatt",
@@ -328,9 +686,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "4-5"
     },
     image: "https://example.com/image18.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "island-paradise-villa",
     name: "Island Paradise Villa",
     address: {
       state: "Mahe",
@@ -346,9 +725,30 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "8-10"
     },
     image: "https://example.com/image19.jpg",
-    discount: "60"
+    discount: "60",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   },
   {
+    id: "clifftop-retreat",
     name: "Clifftop Retreat",
     address: {
       state: "Cape Town",
@@ -364,6 +764,26 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "4-5"
     },
     image: "https://example.com/image20.jpg",
-    discount: ""
+    discount: "",
+    description: "Enjoy a luxurious stay at Villa Ocean Breeze with stunning ocean views, private pool, and modern amenities.",
+    images: [
+      "/assets/houses/villa-ocean-breeze-1.jpg",
+      "/assets/houses/villa-ocean-breeze-2.jpg",
+      "/assets/houses/villa-ocean-breeze-3.jpg"
+    ],
+    reviews: [
+      {
+        name: "Alice Johnson",
+        rating: 5,
+        comment: "Amazing villa with breathtaking views and excellent service.",
+        avatar: "/assets/avatars/alice.jpg"
+      },
+      {
+        name: "Mark Thompson",
+        rating: 4.8,
+        comment: "Very comfortable and well equipped. The pool is fantastic!",
+        avatar: "/assets/avatars/mark.jpg"
+      }
+    ]
   }
 ];

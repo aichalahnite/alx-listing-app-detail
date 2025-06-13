@@ -4,40 +4,27 @@ const BookingSection: React.FC<{ price: number }> = ({ price }) => {
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
 
-  const getTotalNights = () => {
+  const calculateTotal = () => {
+    if (!checkIn || !checkOut) return 0;
     const start = new Date(checkIn);
     const end = new Date(checkOut);
-    const diff = (end.getTime() - start.getTime()) / (1000 * 3600 * 24);
-    return diff > 0 ? diff : 0;
+    const days = (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24);
+    return days > 0 ? days * price : 0;
   };
 
-  const total = price * getTotalNights();
-
   return (
-    <div className="bg-white border rounded-lg p-4 shadow">
-      <h3 className="text-xl font-semibold">${price}/night</h3>
-      <div className="mt-4">
-        <label>Check-in</label>
-        <input
-          type="date"
-          className="border w-full p-2 rounded mt-1"
-          value={checkIn}
-          onChange={(e) => setCheckIn(e.target.value)}
-        />
-      </div>
-      <div className="mt-4">
-        <label>Check-out</label>
-        <input
-          type="date"
-          className="border w-full p-2 rounded mt-1"
-          value={checkOut}
-          onChange={(e) => setCheckOut(e.target.value)}
-        />
-      </div>
-      <div className="mt-4">
-        <p>Total: <strong>${total}</strong></p>
-      </div>
-      <button className="bg-green-600 w-full mt-4 text-white py-2 rounded hover:bg-green-700">Reserve Now</button>
+    <div className="p-6 border rounded-lg shadow-md bg-white">
+      <h3 className="text-xl font-semibold mb-4">${price}/night</h3>
+
+      <label className="block">Check-in</label>
+      <input type="date" className="border w-full p-2 mb-4" value={checkIn} onChange={(e) => setCheckIn(e.target.value)} />
+
+      <label className="block">Check-out</label>
+      <input type="date" className="border w-full p-2 mb-4" value={checkOut} onChange={(e) => setCheckOut(e.target.value)} />
+
+      <p className="mt-2">Total payment: <strong>${calculateTotal()}</strong></p>
+
+      <button className="mt-4 w-full bg-green-500 text-white py-2 rounded-md">Reserve now</button>
     </div>
   );
 };

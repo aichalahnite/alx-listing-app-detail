@@ -10,14 +10,24 @@ export interface ButtonProps {
   onClick: () => void;
 }
 
-//milestone: 1
-export interface PropertyProps {
+//milestone: 1 + 2
+export interface Address {
+  state: string;
+  city: string;
+  country: string;
+}
+
+export interface Review {
   name: string;
-  address: {
-    state: string;
-    city: string;
-    country: string;
-  };
+  rating: number;
+  comment: string;
+  avatar: string;
+}
+
+export interface PropertyProps {
+  id: string;
+  name: string;
+  address: Address;
   rating: number;
   category: string[];
   price: number;
@@ -27,5 +37,8 @@ export interface PropertyProps {
     occupants: string;
   };
   image: string;
-  discount: string;
+  discount?: string;
+  description: string;
+  images: string[];
+  reviews: Review[];
 }
